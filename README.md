@@ -52,15 +52,18 @@
 
 ### 1). 모듈 구조
 
-![image](https://user-images.githubusercontent.com/62333600/223746865-e156b5e5-8436-4c8c-af98-b80a77b72ef5.png)
+![image](https://user-images.githubusercontent.com/62333600/223749653-2ea0f8db-d21d-42c9-9320-213bf3c15cf3.png)
+
 
 ### 2). database
 
-![image](https://user-images.githubusercontent.com/62333600/223747003-98185a0f-6891-4ad3-a210-c64d1d9d6b91.png)
+![image](https://user-images.githubusercontent.com/62333600/223750062-ff3aceea-dbd3-4954-a1d9-121309a681b7.png)
+
 
 ### 3). 기능/routes
 
-![image](https://user-images.githubusercontent.com/62333600/223748731-173a1201-a8c7-48fb-9e9c-0ed08edb887a.png)
+![image](https://user-images.githubusercontent.com/62333600/223750273-db428072-1e3a-41c0-91aa-d6c7f77b12fc.png)
+
 
 
 
