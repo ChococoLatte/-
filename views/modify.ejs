@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.ejs')%>
+    <body>
+        <div class="container">
+            <div id="cardbox" class="ui card">
+                <div class="content">
+                    <div class = "left floated author">
+                        <i id="iconImage" class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div id="titleText" class="header">주문자 정보 수정하기</div>
+                        <div id="contentsText" class="description">
+                            주문자 정보를 수정합니다.
+                        </div>
+                    </div>
+                </div>
+                <form id="form1" method="post" action="/process/modifyuser">
+                    <table>
+                        <tr class="row">
+                            <td class="col1">
+                                <label id ="contentsText">휴대폰 번호</label>
+                            </td>
+                            <td class="col2" colspan="2">
+                                <div class="ui input">
+                                     <input class="inputbox" type="text" value="<%= curTel %>" name="tel">
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col1">
+                                <label id ="contentsText">주소</label>
+                            </td>
+                            <td class="col2" colspan="2">
+                                <div class="ui input">
+                                    <input class="inputbox" type="text" value="<%= curAddress %>" name="address">
+                                </div>
+                            </td>       
+                        </tr>                 
+                        <tr valign="baseline">
+                            <td>
+                            </td>
+                            <td id="buttonContainer" algin="right">
+                                <input id="submitButton" class="ui primary button" type="submit" value="수정하기" name="">
+                            </td>
+                            <td id="buttonContainer" algin="right">
+                                <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../public/firstpage.html'">돌아가기</button>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

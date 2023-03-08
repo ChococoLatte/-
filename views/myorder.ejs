@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.ejs')%>
+    <body>
+        <div class="container">
+            <div id="cardbox" class="ui card">
+                <div class="content">
+                    <div class = "left floated author">
+                        <i id="iconImage" class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div id="titleText" class="header">주문 목록 조회</div><br>
+                        <div id="contentsText" class="description">
+                            <%= curName %>님이 현재 로그인 중입니다.
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <tr class="row">
+                        <td class="col1">
+                            <label id ="contentsText">도시락 이름</label>
+                        </td>
+                        <td class="col1">
+                            <label id ="contentsText">가격</label>
+                        </td>
+                    </tr>
+                    <% for (var i=0; i<results.length; i++) {%>
+                    <tr class="row">                
+                        <form id="form1" method="post" action="/process/cancle">
+                            <input type="hidden" name="lname" value="<%= results[i]._doc.lname %>"/>
+                            <input type="hidden" name="price" value="<%= results[i]._doc.price %>"/>
+                            <td class="col1">
+                                <label id ="contentsText"><%= results[i]._doc.lname %></label>
+                            </td>
+                             <td class="col1">
+                                <label id ="contentsText"><%= results[i]._doc.price %></label>
+                            </td>  
+                            <td></td>
+                            <td class="col1">                
+                                <input id="submitCourse" class="ui primary button" type="submit" value="주문취소" name="">
+                            </td>
+                        </form>
+                    </tr>
+                    <% } %>
+                </table>
+                <br>
+                <table>
+                    <tr valign="baseline">
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/order'">주문하기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../process/logout'">로그아웃</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

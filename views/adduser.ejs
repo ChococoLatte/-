@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <%- include('head.ejs')%>
+    <body>
+        <div class="container">
+            <div id="cardbox" class="ui card">
+                <div class="content">
+                    <div class = "left floated author">
+                        <i id="iconImage" class="fas fa-user"></i>
+                    </div>
+                    <div>
+                        <div id="titleText" class="header">회원가입 완료</div>
+                        <div id="contentsText" class="description">
+                            회원등록이 완료되었습니다.
+                        </div>
+                    </div>
+                </div>
+                <%- include('user_info.ejs')%>
+                <table>
+                    <tr valign="baseline">
+                        <td>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../public/firstpage.html'">돌아가기</button>
+                        </td>
+                        <td id="buttonContainer" algin="right">
+                            <button id="submitButton" class="ui primary button" type="button" onclick="location.href='../public/login.html'">로그인</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
