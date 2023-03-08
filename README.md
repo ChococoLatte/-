@@ -1,4 +1,4 @@
-# 도시락 주문 사이트
+# MealMate
 ![image](https://user-images.githubusercontent.com/62333600/223753883-0ee0a70a-b43f-4383-9316-b9d64c72f677.png)
 
 ### 프로젝트 기간
